@@ -1,0 +1,35 @@
+import:
+  - ~/.local/.alacritty-colorscheme/themes/atom_one_light.yaml
+
+
+window:
+  opacity: 1
+
+font: 
+  normal:
+    family: FantasqueSansMono NF
+    style: regular
+
+    bold:
+    family: FantasqueSansMono NF
+    style: Bold
+
+  italic:
+    family: FantasqueSansMono NF
+    style: Italic
+
+  bold_italic:
+    family: FantasqueSansMono NF
+    style: Bold Italic
+
+  size: 9
+
+scrolling: 
+  history: 5000
+
+key_bindings:
+   - { key: V,        mods: Control|Shift, action: Paste            }
+   - { key: C,        mods: Control|Shift, action: Copy             }
+
+shell:
+  program: /usr/bin/zsh
