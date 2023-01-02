@@ -58,7 +58,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 1 # decrease screen 
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec i3-sensible-terminal
  
 
 # kill focused window
@@ -214,7 +214,7 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip
 # finds out, if available)
 bar {
   colors{
-        background #4c566a
+        background #0a0a0a
         statusline #ffffff
         separator #fefefe
 
@@ -232,8 +232,8 @@ bar {
 
 }
 
-exec_always feh --bg-max $HOME/Pictures/Wallpapers/wallhaven-v9v3r5.jpg
+exec_always feh --bg-max $HOME/Pictures/Wallpapers/wallhaven-6dk9p7.png
 # for transparency
 exec --no-startup-id compton
-exec --no-startup-id $HOME/.config/polybar/launch.sh
+# exec --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always xrandr --output eDP --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1-0 --mode 1366x768 --pos 1920x0 --rotate normal
