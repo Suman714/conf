@@ -58,7 +58,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 1 # decrease screen 
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+t exec kitty
+bindsym $mod+t exec mate-terminal
  
 
 # kill focused window
@@ -216,10 +216,10 @@ bar {
          separator_symbol ":|:"
          status_command i3status -c /home/suman/.config/i3/i3status/i3status.conf
          tray_padding         5
-         font pango:Roboto    10
+         font pango:Roboto    9
          tray_output None
          # i3bar position
-         position top
+         position bottom
          colors {
            background #000000
              statusline #ffffff
@@ -234,7 +234,6 @@ bar {
 
 }
 
-exec_always feh --bg-max $HOME/Pictures/Wallpapers/wallhaven-v9v3r5.jpg
 # for transparency
 exec --no-startup-id compton
 exec --no-startup-id $HOME/.config/polybar/launch.sh
