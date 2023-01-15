@@ -58,7 +58,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 1 # decrease screen 
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+t exec mate-terminal
+bindsym $mod+t exec kitty
  
 
 # kill focused window
@@ -233,7 +233,7 @@ bar {
          }
 
 }
-
+exec_always feh --bg-max $HOME/Pictures/Wallpapers/wallhaven-1p3op3.jpg
 # for transparency
 exec --no-startup-id compton
 exec --no-startup-id $HOME/.config/polybar/launch.sh
