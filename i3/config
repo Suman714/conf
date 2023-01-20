@@ -65,7 +65,7 @@ bindsym $mod+t exec kitty
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+r exec --no-startup-id dmenu_run
+bindsym $mod+r exec --no-startup-id dmenu_run -nb "#2F383E" -nf "#D3C6AA" -sb "#2E3440" -sf "#EBCB8B"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -221,8 +221,8 @@ bar {
          # i3bar position
          position bottom
          colors {
-           background #000000
-             statusline #ffffff
+           background #2F383E
+             statusline #D3C6AA
              separator #666666
 
              focused_workspace  #4c7899 #285577 #ffffff
@@ -233,8 +233,8 @@ bar {
          }
 
 }
-exec_always feh --bg-max $HOME/Pictures/Wallpapers/wallhaven-1p3op3.jpg
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always feh --bg-max $HOME/Pictures/Wallpapers/dcep12_pc.png
 # for transparency
 exec --no-startup-id compton
-exec --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always xrandr --output eDP --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1-0 --mode 1366x768 --pos 1920x0 --rotate normal
