@@ -288,7 +288,7 @@ globalkeys = gears.table.join(
     { description = "go back", group = "client" }),
 
   -- Standard program
-  awful.key({ modkey, }, "Return", function() awful.spawn(terminal) end,
+  awful.key({ modkey, }, "t", function() awful.spawn(terminal) end,
     { description = "open a terminal", group = "launcher" }),
   awful.key({ modkey, "Control" }, "r", awesome.restart,
     { description = "reload awesome", group = "awesome" }),
@@ -629,4 +629,3 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- Autostart apps
 awful.spawn.with_shell("compton")
 awful.spawn.with_shell("nitrogen --restore")
-
