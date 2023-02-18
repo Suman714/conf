@@ -234,7 +234,8 @@ bar {
 
 }
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always feh --bg-max $HOME/Pictures/Wallpapers/dcep12_pc.png
+# exec_always feh --bg-max $HOME/Pictures/Wallpapers/wallhaven-kx87e7.jpg
 # for transparency
 exec --no-startup-id compton
+exec --no-startup-id nitrogen --restore
 exec_always xrandr --output eDP --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1-0 --mode 1366x768 --pos 1920x0 --rotate normal
