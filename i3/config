@@ -58,7 +58,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 1 # decrease screen 
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+t exec kitty
+bindsym $mod+t exec alacritty
  
 
 # kill focused window
@@ -90,8 +90,8 @@ bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+H move left
-bindsym $mod+Shift+J move down
-bindsym $mod+Shift+K move up
+bindsym $mod+Shift+Z move down
+bindsym $mod+Shift+V move up
 bindsym $mod+Shift+L move right
 
 # alternatively, you can use the cursor keys:
@@ -234,8 +234,8 @@ bar {
 
 }
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-# exec_always feh --bg-max $HOME/Pictures/Wallpapers/wallhaven-kx87e7.jpg
+exec_always feh --bg-max $HOME/Pictures/Wallpapers/1635450895190.jpg
 # for transparency
 exec --no-startup-id compton
-exec --no-startup-id nitrogen --restore
+# exec --no-startup-id nitrogen --restore
 exec_always xrandr --output eDP --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1-0 --mode 1366x768 --pos 1920x0 --rotate normal
